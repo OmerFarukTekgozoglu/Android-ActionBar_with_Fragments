@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarTop"
+            android:background="@drawable/white_grey_border_bottom">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="25sp"
+            android:layout_marginTop="100dp"
+            android:text="@string/textViewFragmentLibrary"
+            android:id="@+id/textViewTitle"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarBottom"
+            android:background="@drawable/white_grey_border_top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:id="@+id/imageViewBtnHome"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/ic_home"/>
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:id="@+id/imageViewBtnLibrary"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/ic_view_book" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:id="@+id/imageViewBtnFood"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/ic_restaurant" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
